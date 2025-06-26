@@ -1,7 +1,7 @@
 {
   "name": "use-react-ss-pro",
   "version": "1.0.0",
-  "description": "React hook wrapper for html2canvas-pro",
+  "description": "React hook to take screenshots with html2canvas-pro",
   "license": "MIT",
   "author": "weekiat-douze",
   "main": "./dist/index.js",

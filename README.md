@@ -36,7 +36,10 @@ export default function component() {
             Take Screenshot
         </button>
         <div className="screenshot-target" ref={ref}> <!-- Attaching ref to element -->
-            <p>It is for these reasons that I regard the decision last year to shift our efforts in space from low to high gear as among the most important decisions that will be made during my incumbency in the office of the Presidency.</p>
+            <p>It is for these reasons that I regard the decision last year to shift 
+            our efforts in space from low to high gear as among the most important 
+            decisions that will be made during my incumbency in the office of the 
+            Presidency.</p>
         </div>
     </div>
 }
