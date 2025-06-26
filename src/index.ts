@@ -1,17 +1,16 @@
 import html2canvas, { type Options } from "html2canvas-pro";
 import { useState, } from 'react';
 
-type ScreenshotOptions = {
-    imageFormat: "image/png" | "image/jpeg" | "image/webp",
-    quality: number,
-};
+
+type ImageFormat = "image/png" | "image/jpeg" | "image/webp"
 
 /**
  * React Hook to generate screenshot from DOM nodes
- * @param {ScreenshotOptions} object - containing imageFormat and quality configuration for the generated image
- * @returns {Array} React hook that uses HTML2Canvas-pro to take screenshot
+ * @param imageFormat - to configure image format when converting canvas 
+ * @param quality - to confgiure quality when converting canvas
+ * @returns - React hook that uses HTML2Canvas-pro to take screenshot
  */
-function useScreenshot({ imageFormat, quality }: ScreenshotOptions) {
+function useScreenshot(imageFormat: ImageFormat = "image/jpeg", quality: number = 1): [string | null, (domNode: any, options?: Partial<Options>) => Promise<string>] {
     if (quality < 0 || quality > 1) {
         throw new Error("Image quality should be between 0 and 1");
     }
@@ -53,6 +52,6 @@ function triggerDownload(image: string, imageName: string) {
     a.click();
 }
 
-// Nmaed export
+// Named export
 export { useScreenshot, triggerDownload }
 
