@@ -1,0 +1,18 @@
+{
+  "name": "use-react-ss-pro",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@types/react": "^19.1.8",
+    "html2canvas-pro": "^1.5.11",
+    "react": "^19.1.0",
+    "typescript": "^5.8.3"
+  }
+}
